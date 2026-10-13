@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang = "ja">
+    <head>
+        <meta charset = "UTF-8">
+        <title>ペンギンサーチ</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;800&display=swap" rel="stylesheet">
+    </head>
+    <body>
+
+        <div class="wave"></div>
+        <div class="wave-top"></div>
+
+        <h1 class = "main-title">ペンギンサーチ</h1>
+
+        <details class = "howToUse">
+            <summary>説明</summary>
+            全国の動物園・水族館で飼育されているペンギンを検索できるウェブサイト<br>
+            施設名、識別色、種類、名前で絞り込み検索が可能<br>
+            現在、写真をいらすとやで代用
+        </details>
+
+        <div class = "search-form">
+            <select id = "facilitySelect">
+             <option value = "all" class="facility-select">すべての施設</option>
+           </select>
+           
+          <select id = "colorSelect">
+              <option value ="all" class="color-select">すべての色</option>
+          </select>
+
+            <select id ="typeSelect">
+                <option value ="all" class="type-select">全種類</option>
+            </select>
+
+            <input id = "nameInput" type="text" placeholder = "名前で検索">
+        
+            <button id = "searchButton">検索</button>
+
+            <button id = "randomButton">ランダム</button>
+
+            <button id ="resetButton">リセット</button>
+
+            <a class = "pagetop" href="#"><div class ="pagetopArrow"></div></a>
+        </div>
+        <div id = "result" class="result-list"></div>
+
+        <script src ="data.js"></script>
+        <script src ="script.js"></script>
+    </body>
+</html>
