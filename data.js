@@ -277,6 +277,17 @@ birthday:"不明",
 personality:"温厚でな性格　湿度がちょうどいい",
 photo:"images/capePenguin.jpg"},
 
+{id:null,
+facility:"京都水族館",
+name:"",
+gender:"()",
+type:"ケープペンギン",
+bandColor:[],
+bandPosition:null,
+birthday:"年月日",
+personality:"",
+photo:"images/capePenguin.jpg"},
+
 {id:6,
 facility:"新江ノ島水族館",
 name:"ホワイト",
@@ -1795,6 +1806,50 @@ birthday:"不明",
 personality:"おもちゃ遊びが好き",
 photo:"images/rockhopperPenguin.jpg"},
 
+{id:null,
+facility:"伊豆シャボテン動物公園",
+name:"ナスビ",
+gender:"(♀)",
+type:"ケープペンギン",
+bandColor:["緑","赤"],
+bandPosition:null,
+birthday:"2020年10月17日",
+personality:"名前の由来は母親の「キュウリ」",
+photo:"images/capePenguin.jpg"},
+
+{id:null,
+facility:"伊豆シャボテン動物公園",
+name:"ヘチマ",
+gender:"(♂)",
+type:"ケープペンギン",
+bandColor:["緑","緑"],
+bandPosition:null,
+birthday:"2020年末",
+personality:"「ナスビ」と姉弟　姉よりも体が大きい",
+photo:"images/capePenguin.jpg"},
+
+{id:null,
+facility:"伊豆シャボテン動物公園",
+name:"ヒマワリ",
+gender:"(♀)",
+type:"ケープペンギン",
+bandColor:["黒"],
+bandPosition:null,
+birthday:"不明",
+personality:"かわいい",
+photo:"images/capePenguin.jpg"},
+
+{id:null,
+facility:"伊豆シャボテン動物公園",
+name:"ナッツ",
+gender:"(♂)",
+type:"ケープペンギン",
+bandColor:["緑","黄"],
+bandPosition:null,
+birthday:"不明",
+personality:"かわいい",
+photo:"images/capePenguin.jpg"},
+
 ];//end
 
 const bandColorList= [...new Set (penguins.flatMap(p=> p.bandColor))];
@@ -1806,8 +1861,9 @@ bandColorList.sort(function(a,b){
 });
 
 const facilityOrder = [
-    //"伊豆シャボテン動物公園"
+    
     "海",
+    "伊豆シャボテン動物公園",
     "海遊館",
     "京都水族館",
     "新江ノ島水族館",
